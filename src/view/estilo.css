@@ -1,3 +1,27 @@
+.anchorPane {
+    -fx-background-color: rgb(34,193,195);
+    -fx-background-color: linear-gradient( rgba(34,193,195,1) 0%, rgb(253, 187, 45) 100%);
+
+}
+
+.box {
+    -fx-background-color: #ffffff;
+    -fx-background-radius: 10;
+}
+
+.button {
+    -fx-background-color:  #2CD5A5;
+    -fx-text-fill: #ffffff;
+}
+
+.button:hover {
+    -fx-background-color: FDBB2D;
+}
+
+.textField {
+    -jfx-focus-color: #1eab8c;
+}
+
 .title{
     -fx-font-size: 24;
     -fx-text-fill: #1fbed5;
