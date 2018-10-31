@@ -1,9 +1,10 @@
 .anchorPane {
-
+    -fx-background-radius: 30;
 }
 
 .imagePane {
     -fx-background-size: cover;
+    -fx-background-radius: 30;
 }
 
 .box {
