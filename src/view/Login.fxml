@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import com.gluonhq.charm.glisten.control.TextField?>
 <?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -14,7 +14,7 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.layout.VBox?>
 
-<AnchorPane prefHeight="525.0" prefWidth="520.0" stylesheets="@estilo.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane prefHeight="525.0" prefWidth="520.0" styleClass="anchorPane" stylesheets="@estilo.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <GridPane alignment="CENTER" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
         <columnConstraints>
@@ -24,11 +24,11 @@
         </columnConstraints>
         <rowConstraints>
           <RowConstraints maxHeight="1.7976931348623157E308" minHeight="0.0" prefHeight="100.0" vgrow="SOMETIMES" />
-          <RowConstraints maxHeight="1.7976931348623157E308" minHeight="300.0" prefHeight="300.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="350.0" minHeight="350.0" prefHeight="350.0" vgrow="SOMETIMES" />
           <RowConstraints maxHeight="1.7976931348623157E308" minHeight="0.0" prefHeight="100.0" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
-            <VBox alignment="CENTER" prefHeight="364.0" prefWidth="255.0" spacing="10.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+            <VBox alignment="CENTER" prefHeight="364.0" prefWidth="255.0" spacing="15.0" style="-fx-background-radius: 10;" styleClass="box" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
                <children>
                   <ImageView fitHeight="69.0" fitWidth="122.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -37,9 +37,9 @@
                   </ImageView>
                   <Label styleClass="title" text="Sign In" />
                   <Label styleClass="subtitle" text="Hello there" />
-                  <TextField floatText="User" />
-                  <PasswordField promptText="Password" />
-                  <JFXButton prefHeight="106.0" prefWidth="166.0" text="Sign In" />
+                  <JFXTextField labelFloat="true" promptText="User" styleClass="textField" />
+                  <JFXPasswordField labelFloat="true" promptText="Password" styleClass="textField" />
+                  <JFXButton prefHeight="96.0" prefWidth="166.0" text="Sign In" />
                   <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="5.0">
                      <children>
                         <Label styleClass="bottomText" text="Forgot password?" />
