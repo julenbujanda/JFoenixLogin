@@ -1,6 +1,9 @@
 .anchorPane {
 
+}
 
+.imagePane {
+    -fx-background-size: cover;
 }
 
 .box {
@@ -10,7 +13,7 @@
 }
 
 .button {
-    -fx-background-color:  #2CD5A5;
+    -fx-background-color: #2CD5A5;
     -fx-text-fill: #ffffff;
 }
 
@@ -22,7 +25,7 @@
     -jfx-focus-color: #1eab8c;
 }
 
-.title{
+.title {
     -fx-font-size: 24;
     -fx-text-fill: #1fbed5;
 }
