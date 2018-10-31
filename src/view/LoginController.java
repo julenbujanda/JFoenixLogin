@@ -6,6 +6,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
 import javafx.util.Duration;
@@ -26,12 +27,20 @@ public class LoginController {
     @FXML
     private Pane pane4;
 
+    @FXML
+    private ImageView closeButton;
+
     public void initialize() {
         pane1.setStyle("-fx-background-image: url(img/fade1.jpg);");
         pane2.setStyle("-fx-background-image: url(img/fade2.jpg);");
         pane3.setStyle("-fx-background-image: url(img/fade3.jpg);");
         pane4.setStyle("-fx-background-image: url(img/fade4.jpg);");
         animacionFondo();
+    }
+
+    @FXML
+    private void salir() {
+        ((Stage) closeButton.getScene().getWindow()).close();
     }
 
     private void animacionFondo() {
