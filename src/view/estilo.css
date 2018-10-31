@@ -27,6 +27,10 @@
     -fx-text-fill: #1fbed5;
 }
 
+.subtitle {
+    -fx-text-fill: #177e8f;
+}
+
 .bottomText {
     -fx-font-size: 13;
     -fx-text-fill: #969696;

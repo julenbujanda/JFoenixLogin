@@ -37,10 +37,10 @@
                      </image>
                   </ImageView>
                   <Label styleClass="title" text="Sign In" />
-                  <Label styleClass="subtitle" text="Hello there" />
+                  <Label styleClass="subtitle" text="Welcome back!" />
                   <JFXTextField labelFloat="true" promptText="User" styleClass="textField" />
                   <JFXPasswordField labelFloat="true" promptText="Password" styleClass="textField" />
-                  <JFXButton prefHeight="96.0" prefWidth="166.0" text="Sign In" />
+                  <JFXButton prefHeight="90.0" prefWidth="302.0" text="Sign In" />
                   <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="5.0">
                      <children>
                         <Label styleClass="bottomText" text="Forgot password?" />
