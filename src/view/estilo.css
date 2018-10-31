@@ -1,0 +1,9 @@
+.title{
+    -fx-font-size: 24;
+    -fx-text-fill: #1fbed5;
+}
+
+.bottomText {
+    -fx-font-size: 13;
+    -fx-text-fill: #969696;
+}
