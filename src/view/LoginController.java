@@ -27,10 +27,10 @@ public class LoginController {
     private Pane pane4;
 
     public void initialize() {
-        pane1.setStyle("-fx-background-image: url(img/fade1.jpg); -fx-background-size: cover");
-        pane2.setStyle("-fx-background-image: url(img/fade2.jpg);  -fx-background-size: cover");
-        pane3.setStyle("-fx-background-image: url(img/fade3.jpg); -fx-background-size: cover");
-        pane4.setStyle("-fx-background-image: url(img/fade4.jpg); -fx-background-size: cover");
+        pane1.setStyle("-fx-background-image: url(img/fade1.jpg);");
+        pane2.setStyle("-fx-background-image: url(img/fade2.jpg);");
+        pane3.setStyle("-fx-background-image: url(img/fade3.jpg);");
+        pane4.setStyle("-fx-background-image: url(img/fade4.jpg);");
         animacionFondo();
     }
 
@@ -110,6 +110,7 @@ public class LoginController {
         stage.setScene(scene);
         stage.getIcons().add(new Image("file:src/img/plane.png"));
         stage.setTitle("Sign Up");
+        ((Stage) pane1.getScene().getWindow()).close();
         stage.show();
     }
 
