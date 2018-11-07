@@ -15,11 +15,12 @@ public class SignUpController {
     @FXML
     private ImageView closeButton;
 
-    public void initialize(){
-        Media media=new Media(getClass().getResource("../media/signUpVideo.mp4").toExternalForm());
-        MediaPlayer mediaPlayer=new MediaPlayer(media);
+    public void initialize() {
+        Media media = new Media(getClass().getResource("../media/backgroundVideo.mp4").toExternalForm());
+        MediaPlayer mediaPlayer = new MediaPlayer(media);
         mediaView.setMediaPlayer(mediaPlayer);
         mediaPlayer.setVolume(0.5);
+        mediaPlayer.setCycleCount(MediaPlayer.INDEFINITE);
         mediaPlayer.play();
     }
 
