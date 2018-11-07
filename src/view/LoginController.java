@@ -8,7 +8,10 @@ import javafx.scene.Scene;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.Pane;
+import javafx.scene.paint.Color;
+import javafx.scene.shape.Rectangle;
 import javafx.stage.Stage;
+import javafx.stage.StageStyle;
 import javafx.util.Duration;
 
 import java.io.IOException;
@@ -117,6 +120,13 @@ public class LoginController {
         Scene scene = new Scene(root);
         Stage stage = new Stage();
         stage.setScene(scene);
+        stage.initStyle(StageStyle.UNDECORATED);
+        scene.setFill(Color.TRANSPARENT);
+        stage.initStyle(StageStyle.TRANSPARENT);
+        Rectangle rect = new Rectangle(900, 506);
+        rect.setArcHeight(60.0);
+        rect.setArcWidth(60.0);
+        root.setClip(rect);
         stage.getIcons().add(new Image("file:src/img/plane.png"));
         stage.setTitle("Sign Up");
         ((Stage) pane1.getScene().getWindow()).close();
