@@ -12,14 +12,15 @@
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.layout.VBox?>
+<?import javafx.scene.media.MediaView?>
 
-<AnchorPane prefHeight="525.0" prefWidth="520.0" style="-fx-background-color: linear-gradient( rgba(34,193,195,1) 0%, rgb(253, 187, 45) 100%);" styleClass="anchorPane" stylesheets="@estilo.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane prefHeight="525.0" prefWidth="900.0" styleClass="anchorPane" stylesheets="@estilo.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1">
     <children>
         <GridPane alignment="CENTER" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
             <columnConstraints>
                 <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="0.0" prefWidth="130.0" />
                 <ColumnConstraints hgrow="SOMETIMES" maxWidth="354.8000366210937" minWidth="10.0" prefWidth="353.19999999999993" />
-                <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="0.0" prefWidth="130.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="50.0" minWidth="0.0" prefWidth="50.0" />
             </columnConstraints>
             <rowConstraints>
                 <RowConstraints maxHeight="1.7976931348623157E308" minHeight="0.0" prefHeight="100.0" vgrow="SOMETIMES" />
@@ -48,5 +49,6 @@
                 </VBox>
             </children>
         </GridPane>
+      <MediaView fitHeight="525.0" fitWidth="900.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
     </children>
 </AnchorPane>
