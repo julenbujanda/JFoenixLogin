@@ -30,7 +30,7 @@
                 <RowConstraints maxHeight="1.7976931348623157E308" minHeight="0.0" prefHeight="100.0" vgrow="SOMETIMES" />
             </rowConstraints>
             <children>
-                <VBox alignment="CENTER" prefHeight="364.0" prefWidth="255.0" spacing="15.0" style="-fx-background-radius: 10;" styleClass="box" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+                <VBox alignment="CENTER" prefHeight="364.0" prefWidth="255.0" spacing="15.0" style="-fx-background-radius: 10; -fx-background-color: #ffffff99;" styleClass="box" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
                     <children>
                         <ImageView fitHeight="69.0" fitWidth="122.0" pickOnBounds="true" preserveRatio="true">
                             <image>
