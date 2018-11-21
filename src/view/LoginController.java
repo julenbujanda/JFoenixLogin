@@ -16,6 +16,12 @@ import javafx.util.Duration;
 
 import java.io.IOException;
 
+/**
+ * Controlador de la vista de Login
+ * @author Julen Bujanda
+ * @version 1.0
+ * @see SignUpController
+ */
 public class LoginController {
 
     @FXML
@@ -33,6 +39,9 @@ public class LoginController {
     @FXML
     private ImageView closeButton;
 
+    /**
+     * Inicializa la vista. Añade las imágenes e inicia la animación
+     */
     public void initialize() {
         pane1.setStyle("-fx-background-image: url(img/fade1.jpg);");
         pane2.setStyle("-fx-background-image: url(img/fade2.jpg);");
@@ -41,11 +50,17 @@ public class LoginController {
         animacionFondo();
     }
 
+    /**
+     * Cierra la ventana. Se ejecuta al hacer click en el botón cerrar.
+     */
     @FXML
     private void salir() {
         ((Stage) closeButton.getScene().getWindow()).close();
     }
 
+    /**
+     * Ejecuta la animación de transición entre imágenes
+     */
     private void animacionFondo() {
         FadeTransition fadeTransition = new FadeTransition(Duration.seconds(5),
                 pane4);
@@ -109,6 +124,9 @@ public class LoginController {
                 });
     }
 
+    /**
+     * Abre una ventana nueva de SignUp y cierra la actual
+     */
     @FXML
     private void openSignUp() {
         Parent root = null;

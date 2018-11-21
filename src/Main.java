@@ -8,6 +8,11 @@ import javafx.scene.shape.Rectangle;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 
+/**
+ * @author Julen Bujanda
+ * @version 1.0
+ * @see view.LoginController
+ */
 public class Main extends Application {
 
     private AnchorPane myPane;
